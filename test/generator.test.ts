@@ -31,7 +31,7 @@ describe('the salary generator', () => {
         expect(generateSlipSalary(employee)).toBe(
             'Employee ID: 12345\n' +
             'Employee Name: John J Doe\n' +
-            'Gross Salary: £416.67\n' +
+            'Gross Salary: £755.00\n' +
             'National Insurance contributions: £10.00'
         );
     });

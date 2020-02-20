@@ -1,26 +1,35 @@
 import {Employee} from './model/employee';
 import formatter from './utils/formatter';
 
+const NATIONAL_INSURANCE_THRESHOLD = 8060;
+
 const calculateMonthlyValue = (grossSalary: number) => grossSalary / 12;
+
+const printId = (id: number) => `Employee ID: ${id}\n`;
+
+const printName = (name: string) => `Employee Name: ${name}\n`;
+
+const printMonthlySalary = (salary: number) => `Gross Salary: ${generateMonthlySalary(salary)}`;
 
 const generateMonthlySalary = (grossSalary: number) => {
     let monthlyAmount: number = calculateMonthlyValue(grossSalary);
     return formatter.numberToPound(monthlyAmount);
 };
 
-function printId(id: number) {
-    return `Employee ID: ${id}\n`;
+function generateNationalInsuranceContribution(salary: number) {
+    let tax = (salary - NATIONAL_INSURANCE_THRESHOLD) * .01; // 12% divided in 12 months
+    return formatter.numberToPound(tax);
 }
 
-function printName(name: string) {
-    return `Employee Name: ${name}\n`;
+function printNationalInsuranceContribution(salary: number) {
+    return salary > NATIONAL_INSURANCE_THRESHOLD
+        ? `\n` + `National Insurance contributions: ${generateNationalInsuranceContribution(salary)}`
+        : "";
 }
 
 export function generateSlipSalary(employee: Employee) {
     return printId(employee.employeeId) +
-        printName(employee.employeeName) +
-        `Gross Salary: £` + generateMonthlySalary(employee.grossSalary) +
-        (employee.grossSalary > 8060
-        ? "Higher"
-        : "");
+           printName(employee.employeeName) +
+           printMonthlySalary(employee.grossSalary) +
+           printNationalInsuranceContribution(employee.grossSalary);
 }
