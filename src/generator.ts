@@ -12,9 +12,13 @@ function printId(id: number) {
     return `Employee ID: ${id}\n`;
 }
 
+function printName(name: string) {
+    return `Employee Name: ${name}\n`;
+}
+
 export function generateSlipSalary(employee: Employee) {
     return printId(employee.employeeId) +
-        `Employee Name: ${employee.employeeName}\n` +
+        printName(employee.employeeName) +
         `Gross Salary: £` + generateMonthlySalary(employee.grossSalary) +
         (employee.grossSalary > 8060
         ? "Higher"
