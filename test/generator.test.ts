@@ -1,5 +1,5 @@
 import {Employee} from '../src/model/employee';
-import {generateSlipSalary} from '../src/generator';
+import {generateSlipSalary} from "../src/generator";
 
 describe('the salary generator', () => {
 
