@@ -36,4 +36,23 @@ describe('the salary generator', () => {
         );
     });
 
+    it('should print for 12000 annual gross', () => {
+
+        employee = {
+            employeeId: 12345,
+            employeeName: 'John J Doe',
+            grossSalary: 12000
+        };
+
+        expect(generateSlipSalary(employee)).toBe(
+            'Employee ID: 12345\n' +
+            'Employee Name: John J Doe\n' +
+            'Gross Salary: £1,000.00\n' +
+            'National Insurance contributions: £39.40\n' +
+            'Tax-free allowance: £916.67\n' +
+            'Taxable income: £83.33\n' +
+            'Tax Payable: £16.67'
+        );
+    });
+
 });

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a079d032-d915-4ff5-9bda-fe6cf81bbe19" name="Default Changelist" comment="" />
+    <list default="true" id="a079d032-d915-4ff5-9bda-fe6cf81bbe19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/formatter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/formatter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/generator.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/generator.test.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582209379579</updated>
-      <workItem from="1582209380893" duration="8163000" />
+      <workItem from="1582209380893" duration="11828000" />
     </task>
     <servers />
   </component>
@@ -75,10 +80,10 @@
       <screen x="-656" y="-1417" width="2560" height="1417" />
     </state>
     <state x="133" y="-1070" key="SettingsEditor/0.23.1440.877/-656.-1417.2560.1417@-656.-1417.2560.1417" timestamp="1582213491253" />
-    <state x="-1876" y="-1110" width="1192" height="1093" key="search.everywhere.popup" timestamp="1582217386732">
+    <state x="-1876" y="-1110" width="1192" height="1093" key="search.everywhere.popup" timestamp="1582222359657">
       <screen x="-2560" y="-1417" width="2560" height="1417" />
     </state>
-    <state x="-1876" y="-1110" width="1192" height="1093" key="search.everywhere.popup/0.23.1440.877/-2560.-1417.2560.1417@-2560.-1417.2560.1417" timestamp="1582217386732" />
+    <state x="-1876" y="-1110" width="1192" height="1093" key="search.everywhere.popup/0.23.1440.877/-2560.-1417.2560.1417@-2560.-1417.2560.1417" timestamp="1582222359657" />
     <state x="28" y="-1110" width="1192" height="1093" key="search.everywhere.popup/0.23.1440.877/-656.-1417.2560.1417@-656.-1417.2560.1417" timestamp="1582215311626" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582210495547" />
   </component>
