@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a079d032-d915-4ff5-9bda-fe6cf81bbe19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/formatter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/formatter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/generator.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/generator.test.ts" afterDir="false" />
-    </list>
+    <list default="true" id="a079d032-d915-4ff5-9bda-fe6cf81bbe19" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582209379579</updated>
-      <workItem from="1582209380893" duration="7885000" />
+      <workItem from="1582209380893" duration="8163000" />
     </task>
     <servers />
   </component>

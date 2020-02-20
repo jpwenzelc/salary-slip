@@ -17,8 +17,8 @@ const generateMonthlySalary = (grossSalary: number) => {
 };
 
 function generateNationalInsuranceContribution(salary: number) {
-    let tax = (salary - NATIONAL_INSURANCE_THRESHOLD) * .01; // 12% divided in 12 months
-    return formatter.numberToPound(tax);
+    let nationalInsuranceTax = (salary - NATIONAL_INSURANCE_THRESHOLD) * .01; // 12% divided in 12 months
+    return formatter.numberToPound(nationalInsuranceTax);
 }
 
 function printNationalInsuranceContribution(salary: number) {
