@@ -8,8 +8,15 @@ const generateMonthlySalary = (grossSalary: number) => {
     return formatter.numberToPound(monthlyAmount);
 };
 
+function printId(id: number) {
+    return `Employee ID: ${id}\n`;
+}
+
 export function generateSlipSalary(employee: Employee) {
-    return `Employee ID: ${employee.employeeId}\n` +
+    return printId(employee.employeeId) +
         `Employee Name: ${employee.employeeName}\n` +
-        `Gross Salary: £` + generateMonthlySalary(employee.grossSalary);
+        `Gross Salary: £` + generateMonthlySalary(employee.grossSalary) +
+        (employee.grossSalary > 8060
+        ? "Higher"
+        : "");
 }
