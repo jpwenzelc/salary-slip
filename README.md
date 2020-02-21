@@ -1,5 +1,11 @@
 Salary slip kata
 ================
+
+## Personal Objective
+
+I did this kata with the objective of learning how to set up a typescript project
+from 0, I used yarn, nodemon, ts-jest and babel.
+
 ## Problem description: Salary slip generator for UK companies.
 
   A typical salary slip contains employee details like employee id, employee name and their monthly salary details like their gross salary, national insurance contributions, tax-free allowance, taxable income and tax payable.
@@ -12,27 +18,6 @@ Salary slip kata
 - Salary slip should contain the Employee ID, Employee Name, Gross Salary, National Insurance contributions, Tax-free allowance, Taxable income and Tax payable for the month
 - The entry point should be the following interface, which you can not change:
 
-Java: 
-```java
-
-      public class SalarySlipGenerator {
-        public SalarySlip generateFor(Employee employee);
-      }
-
-```
-
-C#:
-```csharp
-    public class SalarySlipGenerator
-    {
-        public SalarySlip GenerateFor(Employee employee);
-    }
-```
-
-JavaScript
-```javascript
-    function generateSalarySlipFor({employeeId, employeeName, annualGrossSalary})
-```
 You can, however, add **private** methods and fields to the `SalarySlipGenerator` class, change the constructor, and add extra classes.
 
 ## Iterations
