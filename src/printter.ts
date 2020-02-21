@@ -21,6 +21,16 @@ export function printNationalInsuranceContribution(salary: number) {
         : "";
 }
 
+export function printTaxes(salary: number) {
+    if (salary <= TAX_THRESHOLD) {
+        // do nothing
+        return "";
+    }
+    return printTaxFreeAllowance(salary) +
+        printTaxableIncome(salary) +
+        printTaxPayable(salary);
+}
+
 function printTaxFreeAllowance(salary: number) {
     return `\n` + `Tax-free allowance: ${generateTaxFreeAllowance(salary)}`;
 }
@@ -31,14 +41,4 @@ function printTaxableIncome(salary: number) {
 
 function printTaxPayable(salary: number) {
     return `\n` + `Tax Payable: ${generateTaxPayable(salary)}`;
-}
-
-export function printTaxes(salary: number) {
-    if (salary <= TAX_THRESHOLD) {
-        // do nothing
-        return "";
-    }
-    return printTaxFreeAllowance(salary) +
-        printTaxableIncome(salary) +
-        printTaxPayable(salary);
 }
